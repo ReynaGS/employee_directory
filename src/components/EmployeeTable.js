@@ -5,7 +5,7 @@ import EmployeeRow from "./EmployeeRow"
 
 
 function EmployeeTable (props){
-    console.log(props)
+    // console.log(props)
     const employeeRows = props.employeeList.map((employee) =>
     {
         return (

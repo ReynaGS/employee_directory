@@ -6,7 +6,7 @@ import empleados from './employeeList.json'
 
 
 function App() {
-  console.log(empleados);
+  // console.log(empleados);
   return (
     <div className="App">
       <Navbar/>
