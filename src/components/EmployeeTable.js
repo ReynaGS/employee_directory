@@ -11,7 +11,7 @@ function EmployeeTable (props){
         return (
             <EmployeeRow
             id = {employee.id}
-            firstName = {employee.firstName}
+            firstName= {employee.firstName}
             lastName={employee.lastName}
             title={employee.title}
             department={employee.department}
