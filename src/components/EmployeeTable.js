@@ -17,12 +17,24 @@ function EmployeeTable (){
     </tr>
   </thead>
   <tbody>
-     <EmployeeRow/>
-     <EmployeeRow />
+     <EmployeeRow 
+        id={1804} 
+        firstName="Tony" 
+        lastName="Santos" 
+        title="IT Manager" 
+        department="IT" 
+        phoneNumber= "555-555-5555"/>
+     
+     <EmployeeRow 
+        id={1804} 
+        firstName="Tony" 
+        lastName="Santos" 
+        title="IT Manager" 
+        department="IT" 
+        phoneNumber= "555-555-5555"/>
+     
   </tbody>
 </table>
-
-
         </div>
     )
 }
