@@ -1,0 +1,26 @@
+    [
+        {
+            "id": 1804,
+            "firstName": "Tony",
+            "lastName": "Santos",
+            "title": "IT Manager",
+            "department": "IT",
+            "phoneNumber": "555-555-5555"
+        },
+        {
+            "id": 1804,
+            "firstName": "Thais",
+            "lastName": "Garcia",
+            "title": "Project Manager",
+            "department": "Operations",
+            "phoneNumber": "555-555-5556"
+        },
+        {
+            "id": 1804,
+            "firstName": "Matias",
+            "lastName": "Garcia",
+            "title": "Programmer",
+            "department": "IT",
+            "phoneNumber": "555-555-5558"
+        }
+    ]

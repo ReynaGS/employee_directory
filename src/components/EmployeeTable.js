@@ -1,37 +1,37 @@
 import React from "react"; 
+import EmployeeHeader from "./EmployeeHeader";
 import EmployeeRow from "./EmployeeRow"
 
 
-function EmployeeTable (){
+
+function EmployeeTable (props){
+    console.log(props)
+    const employeeRows = props.employeeList.map((employee) =>
+    {
+        return (
+            <EmployeeRow
+            id = {employee.id}
+            firstName = {employee.firstName}
+            lastName={employee.lastName}
+            title={employee.title}
+            department={employee.department}
+            phoneNumber={employee.phoneNumber}
+            />
+        )
+    })
     return(
+
         <div>
-        <table className="table">
-  <thead className="thead-dark">
-    <tr>
-      <th scope="col">Id Number</th>
-      <th scope="col">First Name</th>
-      <th scope="col">Last Name</th>
-      <th scope="col">Title</th>
-      <th scope="col">Department</th>
-      <th scope="col">Phone Number</th>
-    </tr>
-  </thead>
+            {/* {props.employeeList} */}
+ <table className="table">
+        <thead className="thead-dark">
+
+        <EmployeeHeader/>
+
+        </thead>
+  
   <tbody>
-     <EmployeeRow 
-        id={1804} 
-        firstName="Tony" 
-        lastName="Santos" 
-        title="IT Manager" 
-        department="IT" 
-        phoneNumber= "555-555-5555"/>
-     
-     <EmployeeRow 
-        id={1804} 
-        firstName="Tony" 
-        lastName="Santos" 
-        title="IT Manager" 
-        department="IT" 
-        phoneNumber= "555-555-5555"/>
+     {employeeRows}
      
   </tbody>
 </table>
