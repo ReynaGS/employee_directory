@@ -33,11 +33,31 @@ class Wrapper extends React.Component {
 
     };
     handleFilter = () => {
-         
-        var z = this.state.employeeList.filter((employee) => {
+        var z; 
+        console.log(this.props.employeeList)
+        if(this.state.filterValue === ""){
+           
+            
+            this.setState({employeeList: this.props.employeeList})
+            return
+        }
+        if(this.state.filterBy === "department"){
+        z = this.state.employeeList.filter((employee) => {
 
             return(employee.department === this.state.filterValue)
         })
+        } else if(this.state.filterBy === "name"){
+            z = this.state.employeeList.filter((employee) => {
+
+                return (employee.firstName === this.state.filterValue)
+            })
+
+        }else if(this.state.filterBy === "id"){
+            z= this.state.employeeList.filter((employee) => {
+                return (employee.id == this.state.filterValue)
+
+            })
+        }
         this.setState({employeeList:z})
     }; 
     handleChange = (e) => {
