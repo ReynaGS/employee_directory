@@ -1,6 +1,12 @@
 import React from "react"; 
 import EmployeeTable from "./EmployeeTable";
 
+var estilo = {
+    margin: "18px",
+    paddng: "5px"
+    
+} 
+
 class Wrapper extends React.Component {
     state = {
         employeeList: this.props.employeeList,
@@ -76,8 +82,8 @@ class Wrapper extends React.Component {
     render(){
         return(
             <div>
-                <div>
-                    <label>Sort By:</label>
+                <div  style={estilo}>
+                    <label>Sort By: </label>
 
                     <select name="employee_sort" id="sortvalues" onChange={this.handleSelect}>
                         <option selected="selected" value="name">First Name</option>
@@ -91,8 +97,9 @@ class Wrapper extends React.Component {
 
                 </div>
 
-                <div>
-                    <label>filter By:</label>
+                <div style={estilo}>
+                    
+                    <label>Filter By: </label>
 
                     <select name="employee_sort" id="sortvalues" onChange={this.handleFilterDrop}>
                         <option selected="selected" value="name">First Name</option>
@@ -102,7 +109,7 @@ class Wrapper extends React.Component {
                     </select>
                 </div>
 
-                <div className="input-group mb-3">
+                <div className="input-group mb-3" style={{padding:"10px"}}>
                     <input type="text" className="form-control" onChange={this.handleChange} placeholder={"Filter " + this.state.filterBy} aria-label="Recipient's username" aria-describedby="button-addon2"/>
                         <div className="input-group-append">
                         <button className="btn btn-outline-secondary" onClick={this.handleFilter} type="button" id="button-addon2">Filter</button>

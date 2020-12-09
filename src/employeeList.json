@@ -22,5 +22,21 @@
             "title": "Programmer",
             "department": "IT",
             "phoneNumber": "555-555-5558"
+        },
+        {
+            "id": 1022,
+            "firstName": "Luis",
+            "lastName": "Liriano",
+            "title": "Programmer",
+            "department": "IT",
+            "phoneNumber": "555-555-5560"
+        },
+        {
+            "id": 1718,
+            "firstName": "Alberto",
+            "lastName": "Lopez",
+            "title": "Programmer",
+            "department": "Operations",
+            "phoneNumber": "555-555-5560"
         }
     ]
